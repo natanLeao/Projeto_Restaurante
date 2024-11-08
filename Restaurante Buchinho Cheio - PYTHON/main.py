@@ -30,7 +30,8 @@ class Main:
                 restaurante.add_clientes()
                 
             elif opcao == 2:
-                restaurante.add_consumo()
+                tipo = ""
+                restaurante.add_consumo(tipo)
                 
             elif opcao == 3:
                 restaurante.listar_consumo()
