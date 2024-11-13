@@ -51,7 +51,7 @@ class Restaurante:
                 elif continuar != "1":
                     break
 
-    def add_consumo(self):
+    def add_consumo(self, tipo):
         self.mesas_status()
         
         while True:
@@ -68,7 +68,7 @@ class Restaurante:
             print("\nNão possui clientes")
         else:
             while True:
-                self.mesas[indice].add_consumo()
+                self.mesas[indice].add_consumo(tipo)
                 continuar = input("\n1 - Sim  \n2 - Não\nDeseja adicionar mais um pedido nessa mesa?: ")
                 if continuar != "1":
                     break

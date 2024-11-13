@@ -21,14 +21,14 @@ class Mesa:
 
         self.total_clientes += 1
 
-    def add_consumo(self):
+    def add_consumo(self, tipo):
         while True:
             try:
-                opcao = int(input("\n1 - Bebida  \n2 - Comida\nO que deseja adicionar?: "))
+                opcao = int(input("\n1 - Comidas  \n2 - Bebidas\nO que deseja adicionar?: "))
                 if opcao == 1:
-                    self.bebidas.escolher_produto()
+                    self.comidas.escolher_produto(tipo)
                 elif opcao == 2:
-                    self.comidas.escolher_produto()
+                    self.bebidas.escolher_produto(tipo)
                 else:
                     print("\tOpção inválida. Tente novamente.")
                     continue

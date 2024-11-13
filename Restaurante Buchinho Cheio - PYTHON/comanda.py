@@ -13,7 +13,7 @@ class Comanda:
         self.menu_bebidas = self.banco.carregar_menu('bebidas')
 
     def mostrar_menu(self, tipo):
-        if tipo == 'comidas':
+        if tipo == 1:
             print("\tMenu de Comidas:")
             menu = self.menu_comidas
         else:
